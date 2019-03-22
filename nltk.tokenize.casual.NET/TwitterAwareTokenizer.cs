@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace nltk.tokenize.casual.NET
@@ -37,7 +36,7 @@ namespace nltk.tokenize.casual.NET
         private Regex Reduce_Lengthening_Regex { get; set; } = new Regex(@"(.)\1{2,}", RegexOptions.Compiled);
 
 
-        public void Initialize_Regex()
+        public TwitterAwareTokenizer()
         {
             List<string> All_Regex_List = new List<string>();
             All_Regex_List.Add(URLS);
