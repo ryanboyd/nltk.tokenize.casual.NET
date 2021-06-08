@@ -3,7 +3,6 @@ Partial C# port of nltk's [Twitter-aware casual tokenizer](https://github.com/nl
 Use:
 ```
 TwitterAwareTokenizer tokenizer = new TwitterAwareTokenizer();
-tokenizer.Initialize_Regex();
 
 string[] tokens = tokenizer.tokenize("This is a cooool #dummysmiley: :-) :-P <3 and some arrows < > -> <--");
 ```
